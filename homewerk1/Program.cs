@@ -55,14 +55,20 @@ else
 }
 */
 
-//Задача 4: Напишите программу, которая на вход принимает число (N), а на выходе показывает все чётные числа от 1 до N.
-Console.Write("Введите натуральное число: ");//5, 8
-int n = Convert.ToInt32(Console.ReadLine());
-int even_n = n % 2;
+//Задача 4: Напишите программу, которая на вход принимает число (N), 
+//а на выходе показывает все чётные числа от 1 до N.
 
-if (even_n % 2 == 0)
-    while (even_n <= n)
+void even_n(int num1)
+{
+    int num2 = 2;
+    while (num2 <= num1)
     {
-        Console.WriteLine(even_n);
-        even_n = even_n + 2;
+        Console.WriteLine(num2);
+        num2 = num2 + 2;
     }
+}
+
+int n;
+Console.Write("Введите натуральное число: ");//5, 8
+n = Convert.ToInt32(Console.ReadLine());
+even_n(n);
