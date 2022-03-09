@@ -67,7 +67,6 @@ void even_n(int num1)
         num2 = num2 + 2;
     }
 }
-
 int n;
 Console.Write("Введите натуральное число: ");//5, 8
 n = Convert.ToInt32(Console.ReadLine());
