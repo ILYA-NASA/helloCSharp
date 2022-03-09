@@ -19,7 +19,6 @@ int FiveDNumber;
 Console.WriteLine("Введите пятизначное число: "); //14212, 12821, 23432
 FiveDNumber = Convert.ToInt32(Console.ReadLine());
 Palindrom(FiveDNumber);
-*/
 
 //Задача 21
 //Напишите программу, которая принимает на вход координаты двух точек 
@@ -53,3 +52,41 @@ zB = Convert.ToDouble(Console.ReadLine());
 
 distance = GetDistance(xA, yA, zA, xB, yB, zB);
 Console.WriteLine(distance);
+
+
+
+
+
+
+Console.Write("Введите натуральное число: ");
+int n = Convert.ToInt32(Console.ReadLine());
+int neg_n = n*(-1);
+
+while(neg_n <= n)
+{
+    Console.WriteLine(neg_n);
+    neg_n++;
+}
+*/
+
+//Задача 23
+//Напишите программу, которая принимает на вход число (N) 
+//и выдаёт таблицу кубов чисел от 1 до N.
+
+void tableCubes(int num)
+{
+    int num1 = 1;
+
+    while (num1 <= num)
+    {
+        int cubesNum = num1 * num1 * num1;
+        Console.WriteLine(cubesNum);
+        num1++;
+    }
+
+}
+
+int number;
+Console.Write("Enter an integer: "); //3,5
+number = Convert.ToInt32(Console.ReadLine());
+tableCubes(number);
