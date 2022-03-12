@@ -3,27 +3,50 @@
 //Вывести на экран первые два максимальных и первые два минимальных числа из ряда введенных чисел. 
 //Cоздавать массивы в процессе решения запрещено
 
-void toZero(int integer)
+void lostNumber(int integer)
 {
-   Console.WriteLine("Введите еще одно целое число (введите 0 для завершения ввода): ");
-    int NewNumber = Convert.ToInt32(Console.ReadLine());
-    if (NewNumber < 0 || NewNumber > 0)
+    Console.WriteLine("Введите еще одно любое целое число (теперь можете ввести 0 для завершения ввода): ");
+    int NextNumber = Convert.ToInt32(Console.ReadLine());
+    if (NextNumber < 0 || NextNumber > 0)
     {
-        while (NewNumber < 0 || NewNumber > 0)
+        while (NextNumber < 0 || NextNumber > 0)
         {
-            int MAX1 = integer;
+            lostNumber(NextNumber);
+            /*Console.WriteLine("Введите еще одно любое целое число (теперь можете ввести 0 для завершения ввода): ");
+            int NewNextNumber = Convert.ToInt32(Console.ReadLine());
+
+
+            int MAX1 = NextNumber;
             int MAX2 = NewNumber;
-            Console.WriteLine("Первое максимальное: " + MAX1 + " Второе максимальное: " + MAX2);
-            Console.WriteLine("Первое минимальное: " + MAX2 + " Второе минимальное: " + MAX1);
+            if(NewNextNumber > MAX1) MAX1 = NewNextNumber;
+            if(NewNextNumber > MAX2) MAX2 = NewNextNumber;
+            Console.WriteLine("Первое максимальное число: " + MAX1 + " Второе максимальное число: " + MAX2);
+            Console.WriteLine("Первое минимальное число: " + MAX2 + " Второе минимальное число: " + MAX1);
             break;
+            */
         }
     }
     else
     {
-        Console.WriteLine("Первое максимальное: " + integer + " Второе максимальное: " + NewNumber);
-        Console.WriteLine("Первое минимальное: " + NewNumber + " Второе минимальное: " + integer);
+        Console.WriteLine("Первое максимальное: " + NextNumber + " Второе максимальное: " + integer);
+        Console.WriteLine("Первое минимальное: " + integer + " Второе минимальное: " + NextNumber);
     }
 }
+
+void toZero(int NewNumber)
+{
+    Console.WriteLine("Введите еще одно любое целое число кроме 0: ");
+    NewNumber = Convert.ToInt32(Console.ReadLine());
+    if (NewNumber < 0 || NewNumber > 0)
+    {
+        lostNumber(NewNumber);
+    }
+    else
+    {
+        Console.WriteLine("ЗДЕСЬ НЕ НУЖНО ВВОДИТЬ 0! Попробуйте еще раз, когда захотите следовать инструкциям.");
+    }
+}
+
 
 int Number;
 Console.WriteLine("Введите любое целое число кроме 0: ");

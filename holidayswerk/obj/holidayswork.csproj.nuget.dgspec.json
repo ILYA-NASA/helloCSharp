@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\user\\Documents\\GB\\C#\\SeminarC#\\holidayswork\\holidayswork.csproj": {}
+    "C:\\Users\\user\\Documents\\GB\\C#\\SeminarC#\\holidayswerk\\holidayswork.csproj": {}
   },
   "projects": {
-    "C:\\Users\\user\\Documents\\GB\\C#\\SeminarC#\\holidayswork\\holidayswork.csproj": {
+    "C:\\Users\\user\\Documents\\GB\\C#\\SeminarC#\\holidayswerk\\holidayswork.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\user\\Documents\\GB\\C#\\SeminarC#\\holidayswork\\holidayswork.csproj",
+        "projectUniqueName": "C:\\Users\\user\\Documents\\GB\\C#\\SeminarC#\\holidayswerk\\holidayswork.csproj",
         "projectName": "holidayswork",
-        "projectPath": "C:\\Users\\user\\Documents\\GB\\C#\\SeminarC#\\holidayswork\\holidayswork.csproj",
+        "projectPath": "C:\\Users\\user\\Documents\\GB\\C#\\SeminarC#\\holidayswerk\\holidayswork.csproj",
         "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\user\\Documents\\GB\\C#\\SeminarC#\\holidayswork\\obj\\",
+        "outputPath": "C:\\Users\\user\\Documents\\GB\\C#\\SeminarC#\\holidayswerk\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config"
