@@ -15,8 +15,15 @@ void toZero(int max1, int max2, int min1, int min2)
     {
         if (NextNumber > max1)
         {
-            max1 = max2;
-            max2 = NextNumber;
+            if (max2 > max1)
+            {
+                max1 = max2;
+                max2 = NextNumber;
+            }
+            else
+            {
+                max2 = NextNumber;
+            }
         }
         if (NextNumber > max2)
         {
@@ -24,8 +31,15 @@ void toZero(int max1, int max2, int min1, int min2)
         }
         if (NextNumber < min1)
         {
-            min1 = min2;
-            min2 = NextNumber;
+            if (min2 < min1)
+            {
+                min1 = min2;
+                min2 = NextNumber;
+            }
+            else
+            {
+                min2 = NextNumber;
+            }
         }
         if (NextNumber < min2)
         {
