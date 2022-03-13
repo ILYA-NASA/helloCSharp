@@ -13,32 +13,22 @@ void toZero(int max1, int max2, int min1, int min2)
     }
     else
     {
-        if (NextNumber > max1 && NextNumber > max2 && max2 > max1)
+        if (NextNumber > max1)
         {
             max1 = max2;
             max2 = NextNumber;
         }
-        if (NextNumber > max1 && NextNumber > max2 && max2 < max1)
+        if (NextNumber > max2)
         {
             max2 = NextNumber;
         }
-        if (NextNumber > max1 && NextNumber < max2 && max2 > max1)
-        {
-            max1 = max2;
-            max2 = NextNumber;
-        }
-        if (NextNumber < min1 && NextNumber < min2 && min2 < min1)
+        if (NextNumber < min1)
         {
             min1 = min2;
             min2 = NextNumber;
         }
-        if (NextNumber < min1 && NextNumber < min2 && min2 > min1)
+        if (NextNumber < min2)
         {
-            min2 = NextNumber;
-        }
-        if (NextNumber < min1 && NextNumber > min2 && min2 > min1)
-        {
-            min1 = min2;
             min2 = NextNumber;
         }
         toZero(max1, max2, min1, min2);
