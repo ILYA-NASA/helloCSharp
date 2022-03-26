@@ -58,18 +58,14 @@ Console.WriteLine(distance);
 //Напишите программу, которая принимает на вход число (N) 
 //и выдаёт таблицу кубов чисел от 1 до N.
 
-void tableCubes(int num)
-{
-    int num1 = 1;
-    while (num1 <= num)
+void TableCubes(int num)
+{    
+    for (int i = 1; i <= num; i++)
     {
-        int cubesNum = num1 * num1 * num1;
-        Console.WriteLine(cubesNum);
-        num1++;
+       Console.WriteLine(i * i * i); 
     }
 }
 
-int number;
 Console.Write("Enter an integer: "); //3,5
-number = Convert.ToInt32(Console.ReadLine());
-tableCubes(number);
+int number = Convert.ToInt32(Console.ReadLine());
+TableCubes(number);
