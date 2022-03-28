@@ -64,12 +64,14 @@ void FillArray(double[] newArray)
     }
     Console.WriteLine();
 
-    double sum = newArray[1];
-    for (int i = 3; i < newArray.Length; i = i + 2)
+    double max = newArray[0];
+    double min = newArray[0];
+    for (int i = 0; i < newArray.Length; i++)
     {
-        sum = sum + newArray[i];
+        if(newArray[i] > max) max = newArray[i];
+        if(newArray[i] < min) min = newArray[i];
     }
-    Console.WriteLine($"Сумма элементов, стоящих на нечетных позициях массива равна {sum}");
+    Console.WriteLine($"Разница между максимальным ({max}) и минимальным ({min}) элементами массива равна {max - min}");
 }
 
 double[] array = new double[10];
