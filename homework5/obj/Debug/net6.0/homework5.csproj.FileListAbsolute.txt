@@ -1,0 +1,15 @@
+C:\Users\user\Documents\GB\C#\SeminarC#\homework5\bin\Debug\net6.0\homework5.exe
+C:\Users\user\Documents\GB\C#\SeminarC#\homework5\bin\Debug\net6.0\homework5.deps.json
+C:\Users\user\Documents\GB\C#\SeminarC#\homework5\bin\Debug\net6.0\homework5.runtimeconfig.json
+C:\Users\user\Documents\GB\C#\SeminarC#\homework5\bin\Debug\net6.0\homework5.dll
+C:\Users\user\Documents\GB\C#\SeminarC#\homework5\bin\Debug\net6.0\homework5.pdb
+C:\Users\user\Documents\GB\C#\SeminarC#\homework5\obj\Debug\net6.0\homework5.csproj.AssemblyReference.cache
+C:\Users\user\Documents\GB\C#\SeminarC#\homework5\obj\Debug\net6.0\homework5.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\user\Documents\GB\C#\SeminarC#\homework5\obj\Debug\net6.0\homework5.AssemblyInfoInputs.cache
+C:\Users\user\Documents\GB\C#\SeminarC#\homework5\obj\Debug\net6.0\homework5.AssemblyInfo.cs
+C:\Users\user\Documents\GB\C#\SeminarC#\homework5\obj\Debug\net6.0\homework5.csproj.CoreCompileInputs.cache
+C:\Users\user\Documents\GB\C#\SeminarC#\homework5\obj\Debug\net6.0\homework5.dll
+C:\Users\user\Documents\GB\C#\SeminarC#\homework5\obj\Debug\net6.0\refint\homework5.dll
+C:\Users\user\Documents\GB\C#\SeminarC#\homework5\obj\Debug\net6.0\homework5.pdb
+C:\Users\user\Documents\GB\C#\SeminarC#\homework5\obj\Debug\net6.0\homework5.genruntimeconfig.cache
+C:\Users\user\Documents\GB\C#\SeminarC#\homework5\obj\Debug\net6.0\ref\homework5.dll
