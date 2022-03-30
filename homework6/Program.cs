@@ -41,7 +41,7 @@ void PrintArray(int[,] array)
     }
 }
 
-Console.Write("Укажите укажите количество строк таблицы: ");
+Console.Write("Укажите количество строк таблицы: ");
 int lines = Convert.ToInt32(Console.ReadLine());
 Console.Write("Укажите количество столбцов таблицы: ");
 int columns = Convert.ToInt32(Console.ReadLine());
