@@ -33,7 +33,11 @@ void PrintArray(int[,] array)
     {
         for (int j = 0; j < array.GetLength(1); j++)
         {
-            if (i == 0 || i == array.GetLength(0) - 1 || j == 0 || j == array.GetLength(1) - 1) array[i, j] = 1;
+            if (i == 0
+                || i == array.GetLength(0) - 1
+                || j == 0
+                || j == array.GetLength(1) - 1)
+                array[i, j] = 1;
             else array[i, j] = 0;
             Console.Write($"{array[i, j]} ");
         }
