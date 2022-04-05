@@ -102,5 +102,5 @@ int[,] CrossDeleting(int[,] matr)
     return matr;
 }
 
-int[,] matrix2 = CreateRandomMatrix(3, 3);
+int[,] matrix2 = CreateRandomMatrix(4, 6);
 PrintMatrix(CrossDeleting(matrix2));
