@@ -34,53 +34,6 @@
 // 8 4 2 4
 // 1 7 -> такого числа в массиве нет
 
-// int[,] array =  new int[,] 
-// { 
-// { 1, 2, 3, 4, 5 }, 
-// { 2, 3, 4, 5, 6 }, 
-// { 6, 5, 4, 3, 2 }, 
-// { 5, 4, 3, 2, 1 }
-// };
-
-// void PrintArray(int[,] existArray)
-// {
-//     Console.WriteLine("Таблица: ");
-//     for (int i = 0; i < existArray.GetLength(0); i++)
-//     {
-//         for (int j = 0; j < existArray.GetLength(1); j++)
-//         {
-//             Console.Write($"{existArray[i, j]} ");
-//         }
-//         Console.WriteLine();
-//     }
-// }
-
-// void SearchElementArray(int[,] existArray, int m, int n)
-// {
-//     if (m <= existArray.GetLength(0) 
-//         && n <= existArray.GetLength(1) 
-//         && m >= 0 
-//         && n >= 0)
-//         Console.WriteLine($"Указанный Вами элемент имеет значение: {existArray[m, n]}");
-//     else Console.WriteLine("Указанного Вами элемента в таблице нет.");
-// }
-
-// PrintArray(array);
-// Console.Write("Укажите номер строки элемента таблицы (нумерация начинается с 0): ");
-// int lines = Convert.ToInt32(Console.ReadLine());
-// Console.Write("Укажите номер столбца элемента таблицы (нумерация начинается с 0): ");
-// int columns = Convert.ToInt32(Console.ReadLine());
-// SearchElementArray(array, lines, columns);
-
-// Задача 3. 
-// Задайте двумерный массив из целых чисел. 
-// Найдите среднее арифметическое элементов в каждом столбце.
-// Например, задан массив:
-// 1 4 7 2
-// 5 9 2 3
-// 8 4 2 4
-// Среднее арифметическое каждого столбца: 4,6; 5,6; 3,6; 3.
-
 int[,] array = new int[,]
 {
 { 1, 4, 7, 2 },
@@ -101,6 +54,34 @@ void PrintArray(int[,] existArray)
     }
 }
 
+// void SearchElementArray(int[,] existArray, int m, int n)
+// {
+//     m = m - 1;
+//     n = n - 1;
+//     if (m < existArray.GetLength(0)
+//         && n < existArray.GetLength(1)
+//         && m >= 0
+//         && n >= 0)
+//         Console.WriteLine($"Указанный Вами элемент имеет значение: {existArray[m, n]}");
+//     else Console.WriteLine("Указанного Вами элемента в таблице нет.");
+// }
+
+// PrintArray(array);
+// Console.Write("Укажите номер строки элемента таблицы: ");
+// int lines = Convert.ToInt32(Console.ReadLine());
+// Console.Write("Укажите номер столбца элемента таблицы: ");
+// int columns = Convert.ToInt32(Console.ReadLine());
+// SearchElementArray(array, lines, columns);
+
+// Задача 3. 
+// Задайте двумерный массив из целых чисел. 
+// Найдите среднее арифметическое элементов в каждом столбце.
+// Например, задан массив:
+// 1 4 7 2
+// 5 9 2 3
+// 8 4 2 4
+// Среднее арифметическое каждого столбца: 4,6; 5,6; 3,6; 3.
+
 void ArithmeticMeanColumnsArray(int[,] existArray)
 {
     for (int i = 0; i < existArray.GetLength(1); i++)
@@ -114,6 +95,6 @@ void ArithmeticMeanColumnsArray(int[,] existArray)
         Console.WriteLine($"Среднее арифметическое столбца №{i + 1} таблицы равняется {sum}");
     }
 }
- 
+
 PrintArray(array);
 ArithmeticMeanColumnsArray(array);
