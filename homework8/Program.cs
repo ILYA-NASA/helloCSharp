@@ -36,9 +36,9 @@ int[,] SortWaneMatrix(int[,] matrix)
         for (int j = 0; j < matrix.GetLength(1) - 1; j++)
         {
             min = j;
-            for (int m = j; m < matrix.GetLength(1); m++)
+            for (int k = j; k < matrix.GetLength(1); k++)
             {
-                if (matrix[i, m] < matrix[i, min]) min = m;
+                if (matrix[i, k] < matrix[i, min]) min = k;
             }
             temp = matrix[i, j];
             matrix[i, j] = matrix[i, min];
@@ -91,8 +91,8 @@ void MinSumRowMatrix(int[,] matrix)
     Console.WriteLine($"Номер строки с наименьшей суммой элементов таблицы: {numMinSumRow + 1}");
 }
 
-int[,] array = CreateRandomMatrix(5, 2);
-MinSumRowMatrix(array);
+// int[,] array = CreateRandomMatrix(5, 2);
+// MinSumRowMatrix(array);
 
 // Задача 3: Сформируйте трёхмерный массив из неповторяющихся двузначных чисел. 
 // Напишите программу, которая будет построчно выводить массив, добавляя индексы каждого элемента.
@@ -102,9 +102,60 @@ MinSumRowMatrix(array);
 // 45(1,0,0) 53(1,0,1)
 // 32(1,1,0) 23(1,1,1)
 
+int[,,] userArray = new int[,,]
+{
+    {
+        {12, 22},
+        {75, 31},
+    },
+    {
+        {45, 53},
+        {32, 23},
+    }
+};
+
+int[,,] CreateRandomArray3D(int[,,] array3D)
+{
+    for (int i = 0; i < array3D.GetLength(0); i++)
+    {
+        for (int j = 0; j < array3D.GetLength(1); j++)
+        {
+            for (int k = 0; k < array3D.GetLength(2); k++)
+            {
+                // Console.Write($"{array3D[i, j, k]} ");
+            }
+            // Console.WriteLine();
+        }
+        // Console.WriteLine();
+    }
+    // Console.WriteLine();
+    return array3D;
+}
+
+void PrintStringsArray3D(int[,,] array)
+{
+    Console.WriteLine($"Массив размером: {array.GetLength(0)} x {array.GetLength(1)} x {array.GetLength(2)}");
+    for (int i = 0; i < array.GetLength(0); i++)
+    {
+        for (int j = 0; j < array.GetLength(1); j++)
+        {
+            for (int k = 0; k < array.GetLength(2); k++)
+            {
+                Console.Write($"{array[i, j, k]} ({i}, {j}, {k}) ");
+            }
+            Console.WriteLine();
+        }
+        // Console.WriteLine();
+    }
+    Console.WriteLine();
+}
+
+PrintStringsArray3D(CreateRandomArray3D(userArray));
+
 // Задача 4: Заполните спирально массив 4 на 4.
 // На выходе получается вот такой массив:
 // 1 2 3 4
 // 12 13 14 5
 // 11 16 15 6
 // 10 9 8 7
+
