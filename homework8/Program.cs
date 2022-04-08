@@ -114,7 +114,7 @@ int[,,] userArray = new int[,,]
     }
 };
 
-int[,,] CreateRandomArray3D(int[,,] array3D)
+int[,,] CreateArray3D(int[,,] array3D)
 {
     for (int i = 0; i < array3D.GetLength(0); i++)
     {
@@ -150,7 +150,7 @@ void PrintStringsArray3D(int[,,] array)
     Console.WriteLine();
 }
 
-PrintStringsArray3D(CreateRandomArray3D(userArray));
+// PrintStringsArray3D(CreateArray3D(userArray));
 
 // Задача 4: Заполните спирально массив 4 на 4.
 // На выходе получается вот такой массив:
@@ -159,3 +159,38 @@ PrintStringsArray3D(CreateRandomArray3D(userArray));
 // 11 16 15 6
 // 10 9 8 7
 
+int[,] SnakeMatrix(int side)
+{
+    int[,] matrix = new int[side, side];
+    int num = 1,
+        column = side,
+        row = side,
+        zeroColumn = 0,
+        zeroRow = 0;
+    while (zeroColumn < column)
+    {
+        for (int i = zeroColumn; i < column; i++)
+        {
+            matrix[zeroRow, i] = num++;
+        }
+        column --;
+        for (int j = zeroRow + 1; j < row; j++)
+        {
+            matrix[j, row - 1] = num++;
+        }
+        row --;
+        for (int k = column - 1; k >= zeroColumn; k--)
+        {
+            matrix[column, k] = num++;
+        }
+        for (int l = row - 1; l > zeroRow; l--)
+        {
+            matrix[l, zeroColumn] = num++;
+        }
+        zeroColumn++;
+        zeroRow++;
+    }
+    return matrix;
+}
+
+PrintMatrix(SnakeMatrix(4));
