@@ -1,0 +1,15 @@
+C:\Users\user\Documents\GB\C#\SeminarC#\Seminar10\bin\Debug\net6.0\Seminar10.exe
+C:\Users\user\Documents\GB\C#\SeminarC#\Seminar10\bin\Debug\net6.0\Seminar10.deps.json
+C:\Users\user\Documents\GB\C#\SeminarC#\Seminar10\bin\Debug\net6.0\Seminar10.runtimeconfig.json
+C:\Users\user\Documents\GB\C#\SeminarC#\Seminar10\bin\Debug\net6.0\Seminar10.dll
+C:\Users\user\Documents\GB\C#\SeminarC#\Seminar10\bin\Debug\net6.0\Seminar10.pdb
+C:\Users\user\Documents\GB\C#\SeminarC#\Seminar10\obj\Debug\net6.0\Seminar10.csproj.AssemblyReference.cache
+C:\Users\user\Documents\GB\C#\SeminarC#\Seminar10\obj\Debug\net6.0\Seminar10.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\user\Documents\GB\C#\SeminarC#\Seminar10\obj\Debug\net6.0\Seminar10.AssemblyInfoInputs.cache
+C:\Users\user\Documents\GB\C#\SeminarC#\Seminar10\obj\Debug\net6.0\Seminar10.AssemblyInfo.cs
+C:\Users\user\Documents\GB\C#\SeminarC#\Seminar10\obj\Debug\net6.0\Seminar10.csproj.CoreCompileInputs.cache
+C:\Users\user\Documents\GB\C#\SeminarC#\Seminar10\obj\Debug\net6.0\Seminar10.dll
+C:\Users\user\Documents\GB\C#\SeminarC#\Seminar10\obj\Debug\net6.0\refint\Seminar10.dll
+C:\Users\user\Documents\GB\C#\SeminarC#\Seminar10\obj\Debug\net6.0\Seminar10.pdb
+C:\Users\user\Documents\GB\C#\SeminarC#\Seminar10\obj\Debug\net6.0\Seminar10.genruntimeconfig.cache
+C:\Users\user\Documents\GB\C#\SeminarC#\Seminar10\obj\Debug\net6.0\ref\Seminar10.dll
