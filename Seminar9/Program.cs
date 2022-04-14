@@ -4,6 +4,8 @@
 // значения b1, k1, b2 и k2 задаются пользователем.
 // b1 = 2, k1 = 5, b2 = 4, k2 = 9 -> (-0,5; 5,5)
 
+Console.Clear();
+
 void CrossPoint(double b1, double k1, double b2, double k2)
 {
     double x = (b2 - b1) / (k1 - k2);
@@ -35,18 +37,19 @@ int[,] TrianglePascal(int n)
     return matrix;
 }
 
-void PrintMatrix(int[,] matr)
+void PrintIsoscelesTriangle(int[,] triangle)
 {
-    for (int i = 0; i < matr.GetLength(0); i++)
+    for (int i = 0; i < triangle.GetLength(0); i++)
     {
-        for (int j = 0; j < matr.GetLength(1); j++)
+        for (int j = 0; j <= triangle.GetLength(1) - i; j++)
+            Console.Write(" ");
+        for (int k = 0; k <= i; k++)
         {
-            if (matr[i,j] != 0)
-                Console.Write($"{matr[i, j]} ");
+            Console.Write(" ");
+            Console.Write(triangle[i, k]);
         }
         Console.WriteLine();
     }
 }
 
-PrintMatrix(TrianglePascal(7)); // задача решена, треуголник равнобедренный
-// TODO: можно прописать метод, где вершина треугольника по центру 
+PrintIsoscelesTriangle(TrianglePascal(5));
