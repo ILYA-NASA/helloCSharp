@@ -21,19 +21,19 @@
 // В некотором машинном алфавите имеются четыре буквы «а», «и», «с» и «в». 
 // Покажите все слова, состоящие из N букв, которые можно построить из букв этого алфавита.
 
-void PrintWords( string alf, int lengthWord, string currentWord)
+void PrintWords(string alf, int lengthWord, string currentWord)
 {
-    if(lengthWord == 0) Console.WriteLine(currentWord);
-    else 
+    if (lengthWord == 0) Console.WriteLine(currentWord);
+    else
     {
-        for (int i = 0; i < alf.Length ; i++)
+        for (int i = 0; i < alf.Length; i++)
         {
-            PrintWords(alf, lengthWord-1, currentWord + alf[i]);
+            PrintWords(alf, lengthWord - 1, currentWord + alf[i]);
         }
     }
 }
 
-PrintWords("helo", 3, String.Empty);
+// PrintWords("helo", 3, String.Empty);
 
 // Задача 3.
 // Заданы 2 массива: info и data. В массиве info хранятся двоичные представления нескольких чисел (без разделителя). 
@@ -50,3 +50,31 @@ PrintWords("helo", 3, String.Empty);
 // выходные данные:
 // 1, 7, 0, 1
 
+int[] BinaryTransformArray(int[] dateArray, int[] infoArray)
+{
+    int[] resultArray = new int[infoArray.Length];
+    int binPos = 0;
+    for (int pos = 0; pos < infoArray.Length; pos++)
+    {
+        int num = 0,
+            pow = 0;
+        for (int i = infoArray[pos] - 1; i >= 0; i--)
+        {
+            num += dateArray[binPos + i] * (int)Math.Pow(2, pow);
+            pow++;
+        }
+        binPos += infoArray[pos];
+        resultArray[pos] = num;
+    }
+    return resultArray;
+}
+
+void PrintArray(int[] array)
+{
+    for (int i = 0; i < array.Length; i++)
+        Console.Write($"{array[i]} ");
+}
+
+int[] data = { 0, 1, 1, 1, 1, 0, 0, 0, 1 },
+        info = { 2, 3, 3, 1 };
+PrintArray(BinaryTransformArray(data, info));
