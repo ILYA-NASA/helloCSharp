@@ -71,10 +71,19 @@ int[] BinaryTransformArray(int[] dateArray, int[] infoArray)
 
 void PrintArray(int[] array)
 {
-    for (int i = 0; i < array.Length; i++)
-        Console.Write($"{array[i]} ");
+    for (int i = 0; i < array.Length - 1; i++)
+        Console.Write($"{array[i]}, ");
+    Console.Write($"{array[array.Length - 1]} ");
 }
 
 int[] data = { 0, 1, 1, 1, 1, 0, 0, 0, 1 },
         info = { 2, 3, 3, 1 };
+Console.WriteLine("Входные данные: ");
+Console.Write("data = {");
+PrintArray(data);
+Console.WriteLine(" }");
+Console.Write("info = {");
+PrintArray(info);
+Console.WriteLine(" }");
+Console.WriteLine("Выходные данные: ");
 PrintArray(BinaryTransformArray(data, info));
